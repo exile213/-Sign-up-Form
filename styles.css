@@ -18,6 +18,8 @@
 :root{
     --main-color: #113f67;
     --secondary-color: #87c0cd;
+    --thirtiary-color: #ffffff;
+    --overlay-color:#87c0cd7c;
     --main-text-size: 30px;
     --secondary-text-size: 20px;
 
@@ -38,14 +40,41 @@ body{
     margin:20px;
     width:80%;
     height:90%;
-    border:1px solid black;
+    border:4px solid var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
     display: flex;
 }
 
+
+/*image container section*/
 .image-container{
     width:35%;
     height: 100%;
+    position: relative;
 }
+
+.image-container::before{
+    content:"";
+    position: absolute;
+    top:150px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--overlay-color);
+}
+
+.image-container::after{
+    content:"";
+    position: absolute;
+    top:160px;
+    left: 150px;
+    width: 100%;
+    height: 130px;
+    background:url("logo.png");
+    background-size: contain; /* Adjust the background size as needed */
+    background-repeat: no-repeat; /* Prevent the logo from repeating */
+}
+
 .image-container #bg-image{
     width: 100%;
     height: inherit;
@@ -59,6 +88,8 @@ body{
     width:65%;
     height: 100%;
     padding:5px;
+    background-color: var(--main-color);
+    color: var(--thirtiary-color);
 }
 
 .main-form{
@@ -94,7 +125,7 @@ label{
 }
 
 input{
-    width:60%;
+    width:70%;
     height: 30px;
     border-radius: 5px;
     padding: 5px;
@@ -111,12 +142,18 @@ input{
 }
 
 button{
-    width:100px;
-    height: 40px;
+    width:120px;
+    height: 50px;
     font-size: var(--secondary-text-size);
     border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--thirtiary-color);
 }
 
 .sign-up-text{
     font-size: var(--secondary-text-size);
+}
+
+a{
+    color: var(--secondary-color);
 }
