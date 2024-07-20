@@ -1,7 +1,18 @@
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'norsebold';
 }
 
 :root{
@@ -87,4 +98,25 @@ input{
     height: 30px;
     border-radius: 5px;
     padding: 5px;
+}
+
+
+/*submit section styles*/
+.submit-section{
+    width: 100%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+button{
+    width:100px;
+    height: 40px;
+    font-size: var(--secondary-text-size);
+    border-radius: 10px;
+}
+
+.sign-up-text{
+    font-size: var(--secondary-text-size);
 }
