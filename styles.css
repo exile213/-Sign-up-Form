@@ -7,7 +7,7 @@
 :root{
     --main-color: #113f67;
     --secondary-color: #87c0cd;
-    --main-text-size: 35px;
+    --main-text-size: 30px;
     --secondary-text-size: 20px;
 
 }
@@ -42,25 +42,49 @@ body{
 }
 
 
+
+/*Form container styles*/
 .form-container{
     width:65%;
     height: 100%;
     padding:5px;
 }
 
-.main-inputs{
+.main-form{
     height:65%;
-    border-bottom: 1px solid ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    gap:50px;
+    padding:20px;
+    margin-bottom: 20px;
+}
 
+.main-inputs{
+    width: 100%;
+    display: flex;
+}
+
+.form-flex-group, .form-flex-group-2{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .form-quote{
     font-size: var(--main-text-size);
+    font-weight: bold;
 }
 label{
     font-size: var(--secondary-text-size);
+    flex-basis: 100%;
+    margin:10px 0;
 }
 
 input{
-    width:30%;
+    width:60%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
 }
