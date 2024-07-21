@@ -2,4 +2,4 @@
 
 Odin project Sign up form
 
-photo by: www.freepik.com
+photo by Nikita Kachanovsky from unsplash

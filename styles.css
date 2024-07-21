@@ -18,7 +18,7 @@
     --main-color: #113f67;
     --secondary-color: #87c0cd;
     --thirtiary-color: #ffffff;
-    --overlay-color:#87c0cd7c;
+    --overlay-color:#87c0cdd2;
     --invalid-color:red;
     --valid-color:#38aef3;
 
@@ -93,6 +93,18 @@ body{
     z-index: 99;
     font-size: 80px;
     color: var(--main-color);
+    font-family: var(--secondary-font-style);
+    font-weight: bold;
+
+}
+
+.imageCredit{
+    bottom:10px;
+    left:80px;
+    position: absolute;
+    z-index: 99;
+    font-size: var(--secondary-text-size);
+    color: white ;
     font-family: var(--secondary-font-style);
     font-weight: bold;
 
